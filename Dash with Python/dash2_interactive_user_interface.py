@@ -7,10 +7,20 @@ app = dash.Dash()
 
 app.layout = html.Div(children=[
     dcc.Input(id='input', value='Enter Something', type='text'),
-    dcc.Output
+    html.Div(id='output')
     ])
 
+@app.callback(
+    Output(component_id='output', component_property='children'),
+    [Input(component_id='input', component_property='value')]
+)
 
+def update_value(input_data):
+    try:
+        return str(float(input_data)**2)
+    except:
+        return "some error"
+        
 if __name__ == "__main__":
     app.run_server(debug=True)
 
