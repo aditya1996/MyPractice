@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <style>
+      body{
+        margin: 30px
+      }
+      .my-container{
+        border: 1px solid green;
+      }
+
+      .my-row{
+        border: 3px solid red;
+        height: 200px
+      }
+
+      .my-col{
+        border: 3px solid blue;
+      }
+    </style>
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <p> different column orientation for different screen sizes</p>
+    <div class="container my-container">
+      <div class="row my-row">
+        <div class="col-md-4 col-sm-6 my-col">
+          Row 1 Col 1
+        </div>
+        <div class="col-md-8 col-sm-6 my-col">
+          Row 1 Col 2
+        </div>
+      </div>
+<br>
+<br>
+
+      <p>horizontal alignment</p>
+      <div class="row justify-content-center my-row">
+        <div class="col-4 my-col">
+          Row 2 Col 1
+        </div>
+        <div class="col-4 my-col">
+          Row 2 Col 2
+        </div>
+      </div>
+      <div class="row justify-content-around my-row">
+        <div class="col-4 my-col">
+          Row 3 Col 1
+        </div>
+        <div class="col-4 my-col">
+          Row 3 Col 2
+        </div>
+      </div>
+      <div class="row justify-content-end my-row">
+        <div class="col-4 my-col">
+          Row 4 Col 1
+        </div>
+        <div class="col-4 my-col">
+          Row 4 Col 2
+        </div>
+      </div>
+      <div class="row justify-content-start my-row">
+        <div class="col-4 my-col">
+          Row 5 Col 1
+        </div>
+        <div class="col-4 my-col">
+          Row 5 Col 2
+        </div>
+      </div>
+      <div class="row justify-content-between my-row">
+        <div class="col-4 my-col">
+          Row 6 Col 1
+        </div>
+        <div class="col-4 my-col">
+          Row 6 Col 2
+        </div>
+      </div>
+      <br>
+      <br>
+      <p>Vertical alignment</p>
+      <div class="row justify-content-between align-items-start my-row">
+        <div class="col-4 my-col">
+          Row 7 Col 1
+        </div>
+        <div class="col-4 my-col">
+          Row 7 Col 2
+        </div>
+      </div>
+      <div class="row justify-content-between align-items-center my-row">
+        <div class="col-4 my-col">
+          Row 8 Col 1
+        </div>
+        <div class="col-4 my-col">
+          Row 8 Col 2
+        </div>
+      </div>
+      <div class="row justify-content-between align-items-end my-row">
+        <div class="col-4 my-col">
+          Row 9 Col 1
+        </div>
+        <div class="col-4 my-col">
+          Row 9 Col 2
+        </div>
+      </div>
+      <br>
+      <br>
+      <p>Specific Vertical alignment</p>
+      <div class="row justify-content-between my-row">
+        <div class="col-4 my-col">
+          Row 10 Col 1
+        </div>
+        <div class="col-4  align-self-start my-col">
+          Row 10 Col 2
+        </div>
+      </div>
+      <div class="row justify-content-between my-row">
+        <div class="col-4  align-self-center my-col">
+          Row 11 Col 1
+        </div>
+        <div class="col-4 my-col">
+          Row 11 Col 2
+        </div>
+      </div>
+      <p>Columns Orders</p>
+      <div class="row my-row">
+        <div class="col-4 order-1 my-col">
+          Row 12 Col 1
+        </div>
+        <div class="col-4 order-2 my-col">
+          Row 13 Col 2
+        </div>
+        <div class="col-4 order-3 my-col">
+          Row 14 Col 3
+        </div>
+        <div class="col-4 order-4 my-col">
+          Row 15 Col 4
+        </div>
+      </div>
+      <div class="row justify-content-between my-row">
+        <div class="col-4 order-4 my-col">
+          Row 12 Col 1
+        </div>
+        <div class="col-4 order-3 my-col">
+          Row 13 Col 2
+        </div>
+        <div class="col-4 order-2 my-col">
+          Row 14 Col 3
+        </div>
+        <div class="col-4 order-1 my-col">
+          Row 15 Col 4
+        </div>
+      </div>
+      <p>Columns orders with screen sizes</p>
+      <div class="row my-row">
+        <div class="col-4 order-md-1 order-sm-4 order-3 my-col">
+          Row 12 Col 1
+        </div>
+        <div class="col-4 order-md-2 order-sm-3 order-2 my-col">
+          Row 13 Col 2
+        </div>
+        <div class="col-4 order-md-3 order-sm-2 order-1 my-col">
+          Row 14 Col 3
+        </div>
+        <div class="col-4 order-md-4 order-sm-1 order-4 my-col">
+          Row 15 Col 4
+        </div>
+      </div>
+      <p>offset</p>
+      <div class="row justify-content-between my-row">
+        <div class="col-4 offset-md-2 my-col">
+          Row 10 Col 1
+        </div>
+        <div class="col-4 my-col">
+          Row 10 Col 2
+        </div>
+      </div>
+      <div class="row justify-content-between my-row">
+        <div class="col-4 offset-sm-2 my-col">
+          Row 11 Col 1
+        </div>
+        <div class="col-4 my-col">
+          Row 11 Col 2
+        </div>
+      </div>
+
+
+
+      
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </body>
+</html>
